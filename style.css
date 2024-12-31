@@ -212,6 +212,7 @@ h2 {
     max-width: 300px;
     border-radius: 20%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 /* Style du point d'interrogation encerclé */
@@ -358,7 +359,8 @@ h2 {
 .project-link:hover {
     background-color: #005500;
 }
-
+ 
+/* Section - Contact */
 .contact {
     padding: 50px;
     background-image: url(img/wave-haikei.svg);
@@ -418,6 +420,7 @@ h2 {
 
 
 /* Footer */
+
 .footer {
     text-align: center;
     padding: 10px 0;
@@ -468,7 +471,7 @@ h2 {
     }
 }
 
-/* Icon*/
+/* Icone */
 
 #icon {
     width: 60px;
@@ -478,89 +481,4 @@ h2 {
 
 #icon:active {
     transform: scale(0.95);
-}
-
-/* Page - projets */
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.project-widget {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    cursor: pointer;
-}
-
-.project-widget img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.project-widget h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.project-widget p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Pop-up */
-.popup-overlay {
-    position: fixed;
-    top: 100;
-    left: 100;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 80%;
-}
-
-.popup-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-/* Fil d'ariane */
-.breadcrumb {
-    padding: 0;
-}
-
-.breadcrumb li {
-    display: inline;
-    margin-right: 5px;
-}
-
-.breadcrumb li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.breadcrumb li::after {
-    content: ">";
-    margin-left: 5px;
-}
-
-.breadcrumb li:last-child::after {
-    content: "";
 }
