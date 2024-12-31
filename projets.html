@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic:wght@400&display=swap">
+    <link rel="shortcut icon" href="img/marquedefab1.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <header class="header">
+        <div class="branding">
+            <h1>LAUCERINE</h1>
+        </div>
+        <img src="img/marquedefab1.png" id="icon">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#projects">Projets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Fil d'ariane -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Accueil</a></li>
+            <li>Projets</li>
+        </ol>
+    </nav>
+
+    <!-- Section des projets -->
+    <main>
+        <section id="projects" class="section projects">
+            <h2>Mes Projets</h2>
+            <div class="projects-container">
+                <!-- Widget de projet 1 -->
+                <div class="project-widget" onclick="openPopup(1)">
+                    <img src="img/project1.jpg" alt="Projet 1">
+                    <h3>Projet 1</h3>
+                    <p>Compétences utilisées : HTML, CSS, JavaScript</p>
+                </div>
+
+                <!-- Widget de projet 2 -->
+                <div class="project-widget" onclick="openPopup(2)">
+                    <img src="img/project2.jpg" alt="Projet 2">
+                    <h3>Projet 2</h3>
+                    <p>Compétences utilisées : PHP, MySQL</p>
+                </div>
+
+                <!-- Widget de projet 3 -->
+                <div class="project-widget" onclick="openPopup(3)">
+                    <img src="img/project3.jpg" alt="Projet 3">
+                    <h3>Projet 3</h3>
+                    <p>Compétences utilisées : React, Node.js</p>
+                </div>
+
+                <!-- Widget de projet 4 -->
+                <div class="project-widget" onclick="openPopup(4)">
+                    <img src="img/project4.jpg" alt="Projet 4">
+                    <h3>Projet 4</h3>
+                    <p>Compétences utilisées : JavaScript, MongoDB</p>
+                </div>
+
+                <!-- Widget de projet 5 -->
+                <div class="project-widget" onclick="openPopup(5)">
+                    <img src="img/project5.jpg" alt="Projet 5">
+                    <h3>Projet 5</h3>
+                    <p>Compétences utilisées : Python, Flask</p>
+                </div>
+
+                <!-- Widget de projet 6 -->
+                <div class="project-widget" onclick="openPopup(6)">
+                    <img src="img/project6.jpg" alt="Projet 6">
+                    <h3>Projet 6</h3>
+                    <p>Compétences utilisées : WordPress, Elementor</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pop-up -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <span class="popup-close" onclick="closePopup()">&times;</span>
+                <h3 id="popup-title">Titre du Projet</h3>
+                <p id="popup-date">Date : <span></span></p>
+                <p id="popup-skills">Compétences : <span></span></p>
+                <p id="popup-description">Description : <span></span></p>
+                <p id="popup-collaborators">Collaborateurs : <span></span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 LAUCERINE. TOUS DROITS RÉSERVÉS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic:wght@400&display=swap">
+    <link rel="shortcut icon" href="img/marquedefab1.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="branding">
+            <h1>LAUCERINE</h1>
+        </div>
+        <img src="img/marquedefab1.png" id="icon">
+        <nav class="navbar" aria-label="Navigation principale">
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="burger-menu" aria-label="Afficher ou masquer la navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section id="landing" class="section landing">
+            <h1 class="text-focus-in">PORTFOLIO</h1>
+            <div class="scroll-down" aria-hidden="true">⬇</div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="about-content">
+                <h2>À propos</h2>
+                <p>
+                    Actuellement en deuxième année de BUT MMI (Métiers du Multimédia et de l’Internet), je suis à la
+                    recherche d’un stage à partir du 7 avril 2025 pour une durée minimale de 8 - 10 semaines, avec la
+                    possibilité de poursuivre en alternance par la suite.
+                    Passionnée par l’audiovisuel, l’évènementiel et le graphisme, je suis particulièrement intéressée
+                    par les postes d’assistante cheffe de projet ou de community manager.
+                </p>
+                <img src="img/moi.png" alt="Photo de moi" class="profile-image">
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <h2>Compétences</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Création Numérique</h3>
+                    <ul>
+                        <li>Indesign (Intermédiaire)</li>
+                        <li>Photoshop (Intermédiaire)</li>
+                        <li>After Effects (Débutante)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Développement Web</h3>
+                    <ul>
+                        <li>HTML (Avancée)</li>
+                        <li>CSS (Intermédiaire)</li>
+                        <li>JavaScript (Débutante)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Autres</h3>
+                    <ul>
+                        <li>Figma (Intermédiaire)</li>
+                        <li>Notion (Débutante)</li>
+                        <li>WordPress (Intermédiaire)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-circle" id="question-circle">?</div>
+            <div class="overlay" id="overlay"></div>
+            <div class="bulle-info" id="bulle-info">
+                <p>Contente de vous annoncer qu'au début de l'année 2025, je vais passer la certification OpQuast !</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <h2>Projets</h2><button>voir plus</button>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="img/moi.png" alt="Aperçu projet 1">
+                    <h3>Site Databstention</h3>
+                    <p>Site d'analyse des taux d'abstention au premier tour des élections législatives en France.</p>
+                    <a href="https://justine-tblt.github.io/DataAbstention/" class="project-link">Voir le projet</a>
+                </div>
+                <div class="project-card">
+                    <img src="img/moi.png" alt="Aperçu projet 2">
+                    <h3>Mini Blog</h3>
+                    <p>Blog sécurisé avec gestion des utilisateurs et des droits.</p>
+                    <a href="https://miniblog.missie.butmmi.o2switch.site/index.php" class="project-link">Voir le
+                        projet</a>
+                </div>
+                <div class="project-card">
+                    <img src="img/moi.png" alt="Aperçu projet 3">
+                    <h3>CV Vidéo</h3>
+                    <p>Courte vidéo de moins de 2m30s où je me présente.</p>
+                    <a href="https://lien-vers-le-projet.com" class="project-link">Voir le projet</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contactez-moi</h2>
+            <p class="contact-description">
+                Envie de collaborer ou simplement d'échanger ? N'hésitez pas à me contacter grâce aux informations
+                ci-dessous.
+            </p>
+            <div class="contact-links">
+                <a href="https://github.com/mon-profil" target="_blank" class="contact-button github">
+                    <img src="img/icone-github.png" alt="GitHub"> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/laure-missie/" target="_blank" class="contact-button linkedin">
+                    <img src="img/icone-linkedin.webp" alt="LinkedIn"> LinkedIn
+                </a>
+                <a href="cv-laure-missie.pdf" target="_blank" class="contact-button cv" download="cv-laure-missie.pdf">
+                    <img src="img/icone-cv.png" alt="CV"> Télécharger mon CV
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 LAUCERINE. TOUS DROITS RÉSERVÉS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
