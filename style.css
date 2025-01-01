@@ -135,10 +135,23 @@ h2 {
     margin-bottom: 10px;
 }
 
+.landing .tagline {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
 .scroll-down {
     font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
     margin-top: 20px;
     animation: scroll 2s ease-in-out infinite alternate;
+}
+
+.scroll-down:hover {
+    color: #007700;
 }
 
 @keyframes scroll {
@@ -196,10 +209,6 @@ h2 {
     padding: 50px;
     color: #333;
     flex-wrap: wrap;
-    background-image: url("img/symbol-scatter-haikei.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .about-content {
@@ -212,7 +221,7 @@ h2 {
     max-width: 300px;
     border-radius: 20%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 /* Style du point d'interrogation encerclé */
@@ -261,7 +270,17 @@ h2 {
     z-index: 999;
 }
 
-/* Skills Section */
+/* Section - Compétences */
+.skills h2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+.skills p {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
 .skills-container {
     display: flex;
     justify-content: center;
@@ -269,7 +288,11 @@ h2 {
     flex-wrap: wrap;
     padding: 20px;
 }
-
+#skills{
+    background-image: url("img/symbol-scatter-haikei.svg");
+    background-size:contain;
+    background-position: center;
+}
 .skill-card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -302,11 +325,13 @@ h2 {
 
 /* Projects Section */
 .projects-container {
-    display: flex;
     gap: 20px;
     overflow-x: auto;
     padding: 20px;
     scroll-snap-type: x mandatory;
+}.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .project-card {
